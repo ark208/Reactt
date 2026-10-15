@@ -1,11 +1,11 @@
-const Page1content = () => {
+import LeftContent from "./LeftContent"
+import RightContent from "./RightContent"
+
+const Page1content = (props) => {
   return (
-    <div className='flex items-center px-18 py-8'>
-      <div className="">
-        <p className="text-3xl ">
-          Prospective customer segmentation
-        </p>
-      </div>
+    <div className='flex items-center px-18 py-8 h-[90vh] gap-10'>
+      <LeftContent />
+      <RightContent users = {props.users}/>
     </div>
   )
 }
